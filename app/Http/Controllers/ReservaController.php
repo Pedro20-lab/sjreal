@@ -2,24 +2,17 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Habitacion;
+use App\Models\Reserva;
 use Illuminate\Http\Request;
 
-class HabitacionController extends Controller
+class ReservaController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $habitaciones = Habitacion::all();
-        return view('habitaciones', ['habitaciones' => $habitaciones]);
-    }
-
-    public function consultarDisponibilidad()
-    {
-        $habitaciones = Habitacion::where('estado_habitacion', 'Disponible')->get();
-        return view('habitaciones', ['habitaciones' => $habitaciones]);
+        //
     }
 
     /**
@@ -41,7 +34,7 @@ class HabitacionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Habitacion $habitacion)
+    public function show(Reserva $reserva)
     {
         //
     }
@@ -49,7 +42,7 @@ class HabitacionController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Habitacion $habitacion)
+    public function edit(Reserva $reserva)
     {
         //
     }
@@ -57,7 +50,7 @@ class HabitacionController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Habitacion $habitacion)
+    public function update(Request $request, Reserva $reserva)
     {
         //
     }
@@ -65,7 +58,7 @@ class HabitacionController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Habitacion $habitacion)
+    public function destroy(Reserva $reserva)
     {
         //
     }

@@ -88,7 +88,8 @@ document.addEventListener('DOMContentLoaded', function () {
         startAutoSlide(); 
     }
 });
-// ventanaaa emergenteee
+
+// ventanaaa emergente
 
 var modal = document.getElementById("modal");
 
